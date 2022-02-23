@@ -1,4 +1,4 @@
-//Khushi Mordani
+
 #include<iostream>
 using namespace std;
 
@@ -6,12 +6,12 @@ class Complex
 {
 	float real,img;
 	public:
-		Complex() //default constructor
+		Complex() 
 		{
 			real = 0;
 			img = 0;
 		}
-		Complex(int a,int b) //Parameterized constructor
+		Complex(int a,int b) 
 		{
 			real = a;
 			img = b;
@@ -20,21 +20,21 @@ class Complex
 		{
 			cout<<"Real:"<<real<<" Imaginary:"<<img<<endl;
 		}
-		Complex operator +(Complex C) //addition operator overloading
+		Complex operator +(Complex C) 
 		{
 			Complex temp;
 			temp.real = real + C.real ;
 			temp.img = img + C.img;
 			return temp;
 		}
-		Complex operator -(Complex C) //subtraction operator overloading
+		Complex operator -(Complex C) 
 		{
 			Complex temp;
 			temp.real = real - C.real;
 			temp.img = img - C.img;
 			return temp;
 		}
-		Complex operator *(Complex C) //multiplication operator overloading
+		Complex operator *(Complex C) 
 		{
 			Complex temp;
 			temp.real = real * C.real;
